@@ -67,12 +67,6 @@ core\fnc\
 - **Portable crates** : Transportable crate types
 - **Utility functions** : Functions shared between systems
 
-#### Supported vehicle types
-- **Semi-armored** : AMF_GBC180_PERS_01, B_AMF_VAB_ULTIMA_X8_F, etc.
-- **Armored** : B_AMF_AMX10_RCR_01_F, B_AMF_TANK_CE_02_F
-- **Helicopters** : AMF_TIGRE_01, amf_nh90_tth_cargo, etc.
-- **Aircraft** : B_AMF_PLANE_TRANSPORT_01_F
-
 ### 2. Drone System (`LEON_drone\`)
 
 #### Features
