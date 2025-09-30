@@ -1,24 +1,5 @@
 # Hearts-And-Minds-ULTIMAT
 Hearts And Minds ULTIMAT is a booster version of Hearts And Minds by Vdauphin on the game ARMA 3
-
-# 📋 COMPLETE DOCUMENTATION - LEON SYSTEMS
-## Hearts & Minds Mission - [13RDPA] LEON
-
----
-
-## 📑 TABLE OF CONTENTS
-
-1. [Overview](#overview)
-2. [System architecture](#system-architecture)
-3. [LEON Utility Systems](#leon-utility-systems)
-4. [Deployment System](#deployment-system)
-5. [Resource System](#resource-system)
-6. [Hearts & Minds Integration](#hearts--minds-integration)
-7. [Configuration and customization](#configuration-and-customization)
-8. [Administrator commands](#administrator-commands)
-9. [Troubleshooting and maintenance](#troubleshooting-and-maintenance)
-10. [File structure](#file-structure)
-
 ---
 
 ## 🎯 OVERVIEW
@@ -33,7 +14,7 @@ This Hearts & Minds mission has been enriched with several advanced systems deve
 - **Centralized configuration** : Unified parameters for all systems
 
 ### Version
-**Version 0.0.7** - Documentation updated 2024
+**Version 0.0.7** - Documentation updated 2025
 
 ---
 
@@ -122,7 +103,7 @@ core\fnc\
 
 #### Supported types
 - **ACE_Box_Misc** : Various equipment (laser, NVG, tools)
-- **Box_NATO_WpsLaunch_F** : Launchers (Eryx, FIM-92, MRAWS)
+- **Box_NATO_WpsLaunch_F** : Launchers (FIM-92, MRAWS)
 - **B_CargoNet_01_ammo_F** : Ammunition and tactical equipment
 - **Box_T_East_Ammo_F** : Repair crates
 
@@ -224,10 +205,10 @@ The resource system manages the mission economy with 4 main resource types.
 ### Resource zones
 
 #### Available zones
-1. **Fuel Zone** : Position [23292.4,16486.5,0]
-2. **Ammunition Zone** : Position [16081.6,16998.9,0]
-3. **Iron Zone** : Position [10924.2,19936.7,0]
-4. **Food Zone** : Position [16563.1,12493.9,0]
+1. **Fuel Zone** : Position (Altis Map) [23292.4,16486.5,0]
+2. **Ammunition Zone** : Position  (Altis Map) [16081.6,16998.9,0]
+3. **Iron Zone** : Position (Altis Map) [10924.2,19936.7,0]
+4. **Food Zone** : Position (Altis Map) [16563.1,12493.9,0]
 
 #### Capture system
 - **Discovery** : Map markers with icons
@@ -588,9 +569,5 @@ This Hearts & Minds mission enriched by [13RDPA] LEON represents a complete and 
 
 **Document version** : 0.0.7  
 **Author** : [13RDPA] LEON  
-**Update date** : 2024  
+**Update date** : 2025  
 **Status** : Complete and up-to-date documentation
-
----
-
-*This document constitutes the complete reference for understanding, using and maintaining all systems developed for this Hearts & Minds mission.*
