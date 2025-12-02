@@ -1,39 +1,92 @@
 # 🗺️ Roadmap - Hearts and Minds ULTIMATE
 
-![Version actuelle](https://img.shields.io/badge/Version%20actuelle-0.0.8-blue)
+![Version actuelle](https://img.shields.io/badge/Version%20actuelle-0.1.0-blue)
 ![Statut](https://img.shields.io/badge/Statut-Production-green)
 
 ## 📅 Historique du projet
 
 - **Début du projet** : 2024
 - **Version de départ** : 0.0.6 (Fork Hearts & Minds)
-- **Version stable actuelle** : 0.0.8 (Octobre 2025)
+- **Version stable précédente** : 0.8.0
+- **Version stable actuelle** : 0.1.0 (Décembre 2025)
 - **Statut** : Production ready
 
 ---
 
-## ✅ Version 0.0.8 - STABLE (Octobre 2024) ✨
+## ✅ Version 0.1.0 - STABLE (Décembre 2025) ✨
 
-### Thème : Stabilisation multijoueur et corrections majeures
+### Thème : Refonte majeure et nouvelles fonctionnalités
 
 **Objectifs** : ✅ **100% COMPLÉTÉS**
 
-#### Corrections critiques multijoueur
-- [x] Système de permissions ACE (créateur/admin)
-- [x] Protection double initialisation UI ressources
-- [x] Anti-duplication checkpoints/drapeaux
-- [x] Tâches fantômes et réactivation rapide
-- [x] AI unités combat fonctionnel
-- [x] Actions ACE restaurées après réparation
-- [x] Menu remboursement auto-cleanup
-- [x] Support SimplexSupportService et Zeus
-- [x] B_supplyCrate_F exclue du remboursement
-- [x] Génération ressources unifiée
-- [x] Icônes ACE corrigées
+#### Refonte complète de l'UI
+- [x] Nouvelle interface utilisateur moderne et intuitive
+- [x] Meilleure lisibilité et organisation des informations
+- [x] Nouvelles icônes et animations
+- [x] Performance améliorée de l'affichage
+
+#### Refonte complète des actions sur objets
+- [x] Système de redéploiement d'objets amélioré
+- [x] Chargement d'objets dans le cargo des véhicules
+- [x] Suppression d'objets avec remboursement améliorée
+- [x] Réparation d'objets endommagés
+- [x] Positionnement des IA amélioré
+- [x] Interface plus intuitive pour toutes les actions
+
+#### Système de cargo persistant
+- [x] Système de cargo persistant pour véhicules
+- [x] Sauvegarde automatique du contenu cargo
+- [x] Restauration du cargo après redémarrage serveur
+- [x] Chargement d'objets dans le cargo via actions molette
+- [x] Objets non chargeables maintenant chargeables
+- [x] Gestion d'inventaire véhicules/caisses améliorée
+
+#### Refonte complète du système de déploiement
+- [x] Arsenal déployable
+- [x] Point de téléportation déployable
+- [x] FOB déployable
+- [x] Point de HALO Jump déployable
+- [x] Système de prévisualisation amélioré
+- [x] Meilleure gestion des objets spéciaux
+
+#### Système d'échange de ressources
+- [x] Système d'échange entre ressources
+- [x] Interface d'échange intégrée
+- [x] Configuration des taux d'échange
+- [x] Gestion économique améliorée
+
+#### Nouvelle ressource : Argent
+- [x] Nouvelle ressource "Argent"
+- [x] Génération d'argent via zones de ressources
+- [x] Utilisation de l'argent dans les systèmes existants
+- [x] Intégration complète avec le système de ressources
+
+#### Refonte totale du système de missions secondaires
+- [x] Système de missions secondaires complètement refait
+- [x] Zones de mission configurables
+- [x] Types de missions au choix
+- [x] Boîte de dialogue pour gérer les appels de mission
+- [x] Configuration complète des récompenses
+- [x] Système de récompenses personnalisable
+- [x] Interface de gestion des missions améliorée
+
+#### Caisse de déploiement persistante
+- [x] Sauvegarde des caisses de déploiement
+- [x] Restauration automatique après redémarrage
+- [x] Actions molette restaurées automatiquement
+- [x] Gestion des caisses améliorée
+
+#### Centralisation des paramètres
+- [x] Paramètres checkpoints dans param.hpp
+- [x] Paramètres FOB dans param.hpp
+- [x] Paramètres ressources dans param.hpp
+- [x] Paramètres rayons dans param.hpp
+- [x] Organisation des paramètres en sections cohérentes
+- [x] Priorité aux paramètres param.hpp avec fallback
 
 #### Documentation
 - [x] README complet FR/EN
-- [x] Guide ACE Actions FR/EN
+- [x] Guide Actions Molette FR/EN
 - [x] Changelog détaillé FR/EN
 - [x] Roadmap FR/EN
 - [x] Documentation in-game mise à jour
@@ -42,47 +95,27 @@
 
 ---
 
-## 🔮 Version 0.0.9 - Optimisations et QoL (T1 2025)
+## 🔮 Version 0.1.8 - Refonte Ressources et Nouvelles Fonctionnalités (T1 2026)
 
-### Thème : Qualité de vie et performances
+### Thème : Refonte système ressources et nouvelles mécaniques
 
-**Objectifs** : 🔄 **EN PLANIFICATION**
-
-#### Optimisations performances
-- [ ] Optimisation boucles de monitoring (réduire fréquence checks)
-- [ ] Système de cache pour zones inactives
-- [ ] Nettoyage automatique objets très anciens
-- [ ] Compression des données de sauvegarde
-- [ ] Amélioration garbage collection
-
-#### Qualité de vie
-- [ ] Raccourcis clavier personnalisables
-- [ ] Présets de déploiement (templates)
-- [ ] Historique des déploiements
-- [ ] Statistiques personnelles (tableau de bord)
-- [ ] Améliorations interface UI ressources
-  - [ ] Graphiques de production
-  - [ ] Alertes seuils bas
-  - [ ] Prévisions de consommation
+**Objectifs** : 🔄 **EN COURS**
 
 #### Système de Ressources
-- [ ] 5ème ressource : Électronique (pour drones, UAV)
-- [ ] Bonus de production (zones multiples)
-- [ ] Événements aléatoires (bonus/malus temporaires)
-- [ ] Marché d'échange (trade resources)
+- [ ] Refonte complète du système de ressources
+- [ ] Ajout de la collecte de ressources manuellement
 
 #### Nouvelles fonctionnalités
-- [ ] Système de grades (XP basé sur déploiements)
-- [ ] Achievements/succès
-- [ ] Briefing dynamique en début de mission
-- [ ] Carte tactique interactive
+- [ ] Ajout d'un réel système de patrouille
+- [ ] Ajout d'un système de civils combattants
+- [ ] Ajout de nouveaux types de missions
 
 **Priorité** : Moyenne  
-**Temps estimé** : 2-3 mois
+**Temps estimé** : 2 semaines
 
 ---
 
-## 🚀 Version 0.1.0 - Extension tactique (T2 2025)
+## 🚀 Version 0.2.0 - Extension tactique (T2 2026)
 
 ### Thème : Nouvelles mécaniques de gameplay
 
@@ -117,13 +150,13 @@
 
 ---
 
-## 💰 Version 0.1.5 - Système économique et Arsenal (T3 2025)
+## 💰 Version 0.2.5 - Système économique avancé (T3 2026)
 
 ### Thème : Monétisation et gestion de l'argent
 
 **Objectifs** : 🔄 **CONCEPT**
 
-#### Système monétaire
+#### Système monétaire avancé
 - [ ] Monnaie virtuelle (différente des ressources)
 - [ ] Argent personnel par joueur
 - [ ] Caisse commune de l'équipe
@@ -173,7 +206,7 @@
 
 ---
 
-## 🎯 Version 0.2.0 - Intégrations et compatibilité (T3-T4 2025)
+## 🎯 Version 0.3.0 - Intégrations et compatibilité (T3-T4 2026)
 
 ### Thème : Expansion et compatibilité mods
 
@@ -254,12 +287,6 @@
 
 ### Propositions communautaires
 
-#### Système de missions secondaires
-- Missions générées dynamiquement
-- Récompenses en ressources
-- Difficultés variables
-- Objectifs bonus
-
 #### Système de construction avancé
 - FOB évolutives (niveaux)
 - Structures personnalisables
@@ -281,6 +308,19 @@
 ---
 
 ## 🎮 Versions antérieures (historique)
+
+### Version 0.0.8 (Octobre 2025)
+**Thème** : Stabilisation multijoueur et corrections majeures
+
+- [x] Système de permissions ACE
+- [x] Protection double initialisation UI ressources
+- [x] Anti-duplication checkpoints/drapeaux
+- [x] Tâches fantômes et réactivation rapide
+- [x] AI unités combat fonctionnel
+- [x] Actions molette restaurées après réparation
+- [x] Support SimplexSupportService et Zeus
+
+**Statut** : ✅ Complété
 
 ### Version 0.0.7 (Septembre 2024)
 **Thème** : Développement systèmes principaux
@@ -308,19 +348,21 @@
 
 ## 📈 Métriques de succès
 
-### Version 0.0.8 (actuelle)
+### Version 0.1.0 (actuelle)
 - ✅ Stabilité multijoueur : 100%
 - ✅ Bugs critiques : 0
 - ✅ Documentation : Complète
 - ✅ Tests : Validés
+- ✅ Nouvelles fonctionnalités : 10+
 
-### Objectifs version 0.0.9
-- 🎯 Réduction lag : -30%
-- 🎯 Satisfaction utilisateurs : >90%
-- 🎯 Nouveaux bugs : <5
-- 🎯 Performance serveur : +20%
+### Objectifs version 0.1.8
+- 🎯 Refonte complète système ressources
+- 🎯 Collecte manuelle de ressources fonctionnelle
+- 🎯 Système de patrouille réel implémenté
+- 🎯 Système de civils combattants fonctionnel
+- 🎯 Nouveaux types de missions ajoutés
 
-### Vision long terme (v0.2.0)
+### Vision long terme (v0.3.0)
 - 🌟 Compatibilité mods : 80%+
 - 🌟 Communauté active : 100+ joueurs
 - 🌟 Cartes supportées : 5+
@@ -331,7 +373,7 @@
 ## 🤝 Comment contribuer
 
 ### Signaler un bug
-1. Vérifiez la version actuelle (0.0.8)
+1. Vérifiez la version actuelle (0.1.0)
 2. Reproduisez le bug
 3. Fournissez logs et RPT
 4. Contactez [13RDPA] LEON
@@ -353,22 +395,21 @@
 ## 📞 Contact et Support
 
 **Auteur** : [13RDPA] LEON  
-**Discord** : [Si disponible]  
-**GitHub** : [Si disponible]  
-**Steam Workshop** : [Si disponible]
+**Discord** : https://discord.gg/aEJ7W6QwYr
+**GitHub** : https://github.com/LeonFAM/Hearts-And-Minds-ULTIMAT
+**Steam Workshop** : https://steamcommunity.com/sharedfiles/filedetails/?id=3580378812
 
 ---
 
 ## 📜 Licence et Crédits
 
-**Hearts & Minds** - Vdauphin & communauté (APL-SA)  
+**Hearts & Minds 2.1.4** - Vdauphin (BTC_clan) & communauté (APL-SA)  
 **Systèmes personnalisés** - [13RDPA] LEON  
-**Assistance v0.0.8** - IA Claude (Anthropic)
+**Assistance développement** - IA Claude (Anthropic)
 
 ---
 
 **Note** : Cette roadmap est indicative et peut évoluer selon les priorités, le feedback communautaire et les contraintes techniques.
 
-**Dernière mise à jour** : Octobre 2025  
-**Version du document** : 1.0
-
+**Dernière mise à jour** : Décembre 2025  
+**Version du document** : 2.0
