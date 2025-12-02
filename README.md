@@ -2,18 +2,21 @@
 
 🇫🇷 FR Version 
 
-Hearts & Minds ULTIMAT est une version pré-alpha (v0.0.7) améliorée et hybride de la mission Hearts & Minds sur ARMA 3, développée par [13RDPA] LEON.
-Elle fusionne les concepts de KP Liberation, Antistasi et Hearts & Minds, pour proposer un gameplay tactique et stratégique plus complet.
+Hearts & Minds ULTIMATE est une version stable (v0.1.1) améliorée et hybride de la mission Hearts & Minds sur ARMA 3, développée par [13RDPA] LEON. Elle fusionne les concepts de KP Liberation, Antistasi et Hearts & Minds, pour proposer un gameplay tactique et stratégique plus complet.
 
 Systèmes principaux :
 
 Utilitaires LEON : drones, saut HALO, téléportation, transport de caisses.
 
-Déploiement : fortifications, troupes, véhicules, checkpoints avec système de contre-attaques.
+Déploiement : fortifications, troupes, véhicules, checkpoints avec système de contre-attaques unifié (checkpoints, FOB, zones ressources). Nouveaux objets déployables : arsenal, téléportation, FOB, HALO Jump.
 
-Ressources : gestion économique avec 4 types (carburant, munitions, fer, nourriture), zones de capture et production.
+Ressources : gestion économique avec 5 types (carburant, munitions, fer, nourriture, argent), zones de capture et production, système d'échange intégré.
 
-Configuration centralisée : paramètres unifiés, sauvegarde et persistance multi-joueur.
+Cargo persistant : sauvegarde automatique du contenu cargo des véhicules avec restauration après restart.
+
+Missions secondaires : système refait avec zones configurables, types variés et récompenses personnalisables.
+
+Configuration centralisée : paramètres unifiés dans param.hpp, sauvegarde et persistance multi-joueur.
 
 Points forts :
 
@@ -25,31 +28,34 @@ Interface claire, intuitive et mise à jour en temps réel.
 
 Sauvegarde robuste et documentation complète.
 
-En bref : une mission immersive et avancée, qui combine le meilleur des trois modes les plus populaires d’ARMA 3, encore en phase pré-alpha.
+En bref : une mission immersive et avancée, qui combine le meilleur des trois modes les plus populaires d'ARMA 3, maintenant en version stable avec de nombreuses améliorations.
 
 🇬🇧 ENG Version 
 
-Hearts & Minds ULTIMAT is a pre-alpha (v0.0.7) enhanced and hybrid version of the Hearts & Minds mission on ARMA 3, developed by [13RDPA] LEON.
-It merges the gameplay concepts of KP Liberation, Antistasi, and Hearts & Minds, creating a deeper tactical and strategic experience.
+Hearts & Minds ULTIMATE is a stable version (v0.1.1) improved and hybrid mission of Hearts & Minds on ARMA 3, developed by [13RDPA] LEON. It merges concepts from KP Liberation, Antistasi and Hearts & Minds, to offer more complete tactical and strategic gameplay.
 
 Main systems:
 
-LEON Utilities: drones, HALO jump, teleportation, cargo carrying.
+LEON Utilities: drones, HALO jump, teleportation, crate carrying.
 
-Deployment: fortifications, troops, vehicles, checkpoints with counter-attack mechanics.
+Deployment: fortifications, troops, vehicles, checkpoints with unified counter-attack system (checkpoints, FOB, resource zones). New deployable objects: arsenal, teleportation, FOB, HALO Jump.
 
-Resources: economy management with 4 types (fuel, ammo, iron, food), capture zones and automatic generation.
+Resources: economic management with 5 types (fuel, ammunition, iron, food, money), capture zones and production, integrated exchange system.
 
-Centralized configuration: unified settings, persistent saving, and multiplayer sync.
+Persistent cargo: automatic save of vehicle cargo content with restoration after restart.
 
-Key strengths:
+Secondary missions: completely redone system with configurable zones, various types and customizable rewards.
 
-Unique fusion of Liberation, Antistasi, and H&M.
+Centralized configuration: unified parameters in param.hpp, save and multiplayer persistence.
 
-Fully integrated and coherent systems.
+Key features:
 
-Clear, real-time interface.
+Unique fusion between Liberation, Antistasi and H&M.
 
-Strong save system and complete documentation.
+Complete and coherent system integration.
 
-In short: an immersive mission that blends the best features of ARMA 3’s three most iconic game modes, currently in pre-alpha stage.
+Clear, intuitive interface updated in real-time.
+
+Robust save system and complete documentation.
+
+In short: an immersive and advanced mission, combining the best of the three most popular ARMA 3 modes, now in stable version with many improvements.
