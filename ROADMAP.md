@@ -403,7 +403,7 @@
 
 ## 📜 Licence et Crédits
 
-**Hearts & Minds 2.1.4** - Vdauphin (BTC_clan) & communauté (APL-SA)  
+**Hearts & Minds 1.25.1** - Vdauphin (BTC_clan) & communauté (APL-SA)  
 **Systèmes personnalisés** - [13RDPA] LEON  
 **Assistance développement** - IA Claude (Anthropic)
 
@@ -413,3 +413,4 @@
 
 **Dernière mise à jour** : Décembre 2025  
 **Version du document** : 2.0
+
