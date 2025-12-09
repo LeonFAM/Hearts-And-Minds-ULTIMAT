@@ -99,7 +99,7 @@
 
 ### Thème : Refonte système ressources et nouvelles mécaniques
 
-**Objectifs** : 🔄 **EN COURS**
+**Objectifs** : ✅ **100% COMPLÉTÉS**
 
 #### Système de Ressources
 - [x] Refonte complète du système de ressources
@@ -413,6 +413,7 @@
 
 **Dernière mise à jour** : Décembre 2025  
 **Version du document** : 2.0
+
 
 
 
