@@ -106,9 +106,9 @@
 - [x] Ajout de la collecte de ressources manuellement
 
 #### Nouvelles fonctionnalités
-- [ ] Ajout d'un réel système de patrouille
+- [x] Ajout d'un réel système de patrouille
 - [x] Ajout d'un système de civils combattants
-- [ ] Ajout de nouveaux types de missions
+- [x] Ajout de nouveaux types de missions
 
 **Priorité** : Moyenne  
 **Temps estimé** : 2 semaines
@@ -413,5 +413,6 @@
 
 **Dernière mise à jour** : Décembre 2025  
 **Version du document** : 2.0
+
 
 
