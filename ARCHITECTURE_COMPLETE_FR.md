@@ -1,9 +1,9 @@
-# Architecture Complète - Hearts and Minds Ultimate v0.1.7
+# Architecture Complète - Hearts and Minds Ultimate v0.2.1
 
 **Mission**: Hearts and Minds Ultimate  
-**Version**: 0.1.7  
+**Version**: 0.2.1  
 **Auteur**: [13RDPA] LEON  
-**Date**: Décembre 2025
+**Date**: 15 Décembre 2025
 
 ---
 
@@ -660,6 +660,9 @@ Hearts and Minds Ultimate est une mission Arma 3 persistante automatisée basée
 - `btc_p_patrol_timer` : Intervalle de création automatique (secondes, 0 = désactivé)
 - `btc_p_patrol_max` : Nombre maximum de patrouilles militaires
 - `btc_p_patrol_vehicle_percent` : Pourcentage de patrouilles avec véhicules (0-100%)
+- `btc_p_patrol_exclusion_base_distance` : Distance d'exclusion autour de la base (500m-5000m, défaut: 1500m)
+- `btc_patrol_exclusion_zones` : Zones d'exclusion personnalisées (définies dans `define_mod.sqf`)
+- `btc_patrol_recent_cities` : Liste des villes récemment sélectionnées (tracking pour éviter répétitions)
 - `btc_auto_patrol` : Variable marquant les patrouilles automatiques (comportement agressif)
 
 **Fonctionnalités avancées**:
@@ -668,7 +671,12 @@ Hearts and Minds Ultimate est une mission Arma 3 persistante automatisée basée
   - Véhicules non armés : Toutes les unités sortent
 - **Mise à jour dynamique** : Waypoints recréés toutes les 1 minute en combat pour suivre les joueurs
 - **Exclusion zones joueurs** : Aucun spawn dans un rayon de 1000m autour des joueurs
+- **Exclusion zones sensibles** : Aucun spawn dans un rayon de 1500m autour des zones de ressources, FOB, checkpoints
+- **Exclusion base configurable** : Aucun spawn dans un rayon configurable autour du marqueur `btc_base` (500m-5000m, défaut: 1500m)
+- **Zones d'exclusion personnalisées** : Possibilité d'ajouter des zones d'exclusion dans `define_mod.sqf` via `btc_patrol_exclusion_zones`
 - **Priorisation intelligente** : Les patrouilles ciblent d'abord les positions des joueurs, puis les villes libérées
+- **Tracking des villes** : Système de tracking pour éviter que les patrouilles se dirigent toujours vers les mêmes villes (exclusion des villes sélectionnées dans les 5 dernières minutes)
+- **Recapture des villes** : Les patrouilles peuvent recapturer les villes libérées (40% de chance) et créer des missions checkpoint (40% de chance)
 
 **Interdépendances**:
 - Utilise `btc_mil_fnc_create_patrol` pour créer les patrouilles militaires
@@ -1366,7 +1374,7 @@ Hearts and Minds Ultimate est une mission Arma 3 persistante automatisée basée
 ## 📊 VARIABLES GLOBALES PRINCIPALES
 
 ### Système de base
-- `btc_version` : Version de la mission [0, 1, 6]
+- `btc_version` : Version de la mission [0, 2, 1]
 - `btc_player_side` : Côté des joueurs
 - `btc_enemy_side` : Côté ennemi
 - `btc_city_all` : HashMap de toutes les villes
@@ -1480,7 +1488,7 @@ Hearts and Minds Ultimate est une mission Arma 3 persistante automatisée basée
 
 ---
 
-**Document créé le**: 8 Décembre 2025  
-**Dernière mise à jour**: 8 Décembre 2025  
-**Version mission**: 0.1.7
+**Document créé le**: 10 Décembre 2025  
+**Dernière mise à jour**: 15 Décembre 2025  
+**Version mission**: 0.2.1
 
