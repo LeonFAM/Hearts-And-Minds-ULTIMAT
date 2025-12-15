@@ -1,19 +1,65 @@
 # 🗺️ Roadmap - Hearts and Minds ULTIMATE
 
-![Version actuelle](https://img.shields.io/badge/Version%20actuelle-0.1.0-blue)
+![Version actuelle](https://img.shields.io/badge/Version%20actuelle-0.2.1-blue)
 ![Statut](https://img.shields.io/badge/Statut-Production-green)
 
 ## 📅 Historique du projet
 
 - **Début du projet** : 2024
 - **Version de départ** : 0.0.6 (Fork Hearts & Minds)
-- **Version stable précédente** : 0.8.0
-- **Version stable actuelle** : 0.1.0 (Décembre 2025)
+- **Version stable précédente** : 0.2.0
+- **Version stable actuelle** : 0.2.1 (15 Décembre 2025)
 - **Statut** : Production ready
 
 ---
 
-## ✅ Version 0.1.0 - STABLE (Décembre 2025) ✨
+## ✅ Version 0.2.1 - STABLE (15 Décembre 2025) ✨
+
+### Thème : Corrections et améliorations
+
+**Objectifs** : ✅ **100% COMPLÉTÉS**
+
+#### Corrections critiques
+- [x] Libération des villes après save/restart avec checkpoint
+- [x] Actions qui ne réapparaissaient pas après déploiement
+- [x] Actions visibles pendant le déploiement
+- [x] Création des tâches checkpoint après restart
+
+#### Ajustements
+- [x] Rayon des hideouts augmenté à 500m
+- [x] Correction du marqueur ellipse des hideouts après restart
+
+**Statut** : ✅ **VERSION STABLE - PRODUCTION READY**
+
+---
+
+## ✅ Version 0.2.0 - STABLE (11 Décembre 2025) ✨
+
+### Thème : Refonte système villes et optimisations
+
+**Objectifs** : ✅ **100% COMPLÉTÉS**
+
+#### Système de tracking des bâtiments occupés
+- [x] Nouveau système pour éviter spawn multiple groupes dans même bâtiment
+- [x] Variable `btc_building_occupied` avec libération automatique
+- [x] Script de surveillance automatique
+
+#### Corrections villes
+- [x] Correction libération automatique lors du despawn
+- [x] Correction libération des villes voisines
+- [x] Correction spawn des véhicules patrouilleurs
+- [x] Amélioration détection au bord des zones
+
+#### Optimisations
+- [x] Réduction de 25% des zones de villes
+- [x] Exclusion automatique véhicules winter
+- [x] Vérifications optimisées dans `setClear`
+
+**Statut** : ✅ **VERSION STABLE - PRODUCTION READY**
+
+---
+
+## ✅ Version 0.1.9 - STABLE (10 Décembre 2025) ✨
 
 ### Thème : Refonte majeure et nouvelles fonctionnalités
 
@@ -95,11 +141,12 @@
 
 ---
 
-## 🔮 Version 0.1.8 - Refonte Ressources et Nouvelles Fonctionnalités (T1 2026)
+## ✅ Version 0.1.8 - Refonte Ressources et Nouvelles Fonctionnalités (Complété)
 
 ### Thème : Refonte système ressources et nouvelles mécaniques
 
 **Objectifs** : ✅ **100% COMPLÉTÉS**
+
 
 #### Système de Ressources
 - [x] Refonte complète du système de ressources
@@ -115,7 +162,7 @@
 
 ---
 
-## 🚀 Version 0.2.0 - Extension tactique (T2 2026)
+## 🚀 Version 0.3.0 - Extension tactique (T2 2026)
 
 ### Thème : Nouvelles mécaniques de gameplay
 
@@ -150,7 +197,7 @@
 
 ---
 
-## 💰 Version 0.2.5 - Système économique avancé (T3 2026)
+## 💰 Version 0.4.0 - Système économique avancé (T3 2026)
 
 ### Thème : Monétisation et gestion de l'argent
 
@@ -206,7 +253,7 @@
 
 ---
 
-## 🎯 Version 0.3.0 - Intégrations et compatibilité (T3-T4 2026)
+## 🎯 Version 0.5.0 - Intégrations et compatibilité (T3-T4 2026)
 
 ### Thème : Expansion et compatibilité mods
 
@@ -353,7 +400,7 @@
 - ✅ Bugs critiques : 0
 - ✅ Documentation : Complète
 - ✅ Tests : Validés
-- ✅ Nouvelles fonctionnalités : 10+
+- ✅ Corrections majeures : 6
 
 ### Objectifs version 0.1.8
 - 🎯 Refonte complète système ressources
@@ -411,10 +458,5 @@
 
 **Note** : Cette roadmap est indicative et peut évoluer selon les priorités, le feedback communautaire et les contraintes techniques.
 
-**Dernière mise à jour** : Décembre 2025  
-**Version du document** : 2.0
-
-
-
-
-
+**Dernière mise à jour** : 15 Décembre 2025  
+**Version du document** : 2.1
