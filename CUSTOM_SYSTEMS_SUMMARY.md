@@ -1,8 +1,8 @@
 # Custom Systems Summary - Hearts and Minds Ultimate
 
-**Version**: 0.1.7  
+**Version**: 0.2.1  
 **Author**: [13RDPA] LEON  
-**Date**: December 2025
+**Date**: December 15, 2025
 
 ---
 
@@ -256,6 +256,9 @@ Automatic patrol system with strict separation between military and civilian pat
 - `create_patrol.sqf` (military): Creation from enemy-occupied cities only
 - `create_patrol.sqf` (civilian): Creation during city activation
 - Player zone exclusion: No patrol spawns within 1000m radius around players
+- Sensitive zone exclusion: No spawns within 1500m radius around resource zones, FOBs, checkpoints
+- Configurable base exclusion: No spawns within configurable radius around `btc_base` marker (500m-5000m, default: 1500m)
+- Custom exclusion zones: Ability to add exclusion zones in `define_mod.sqf` via `btc_patrol_exclusion_zones`
 
 #### Waypoint Management
 - `addWP.sqf`: Waypoint creation with parameters according to type (military/civilian)
@@ -268,6 +271,7 @@ Automatic patrol system with strict separation between military and civilian pat
   - Priority 1: Player positions (direct attack)
   - Priority 2: Liberated cities (recapture)
   - Priority 3: Normal occupied cities
+  - Recent city tracking: Exclusion of cities selected in the last 5 minutes to avoid repetitions
 
 #### Detection and Filtering
 - `hasPlayersNearby.sqf`: Checks for player presence in configurable radius
@@ -298,6 +302,9 @@ Automatic patrol system with strict separation between military and civilian pat
 - `btc_p_patrol_timer`: Automatic creation interval (seconds)
 - `btc_p_patrol_max`: Maximum number of military patrols
 - `btc_p_patrol_vehicle_percent`: Percentage of patrols with vehicles (0-100%)
+- `btc_p_patrol_exclusion_base_distance`: Base exclusion distance (500m-5000m, default: 1500m)
+- `btc_patrol_exclusion_zones`: Custom exclusion zones (defined in `define_mod.sqf`)
+- `btc_patrol_recent_cities`: List of recently selected cities (tracking to avoid repetitions)
 - `btc_auto_patrol`: Variable marking automatic patrols (for aggressive behavior)
 
 ### Configurable parameters (param.hpp)
@@ -305,6 +312,7 @@ Automatic patrol system with strict separation between military and civilian pat
 - `btc_p_patrol_max`: Maximum number of military patrols (0-30)
 - `btc_p_civ_max_veh`: Maximum number of civilian patrols (0-30)
 - `btc_p_patrol_vehicle_percent`: Percentage of patrols with vehicles (0-100%)
+- `btc_p_patrol_exclusion_base_distance`: Base exclusion distance (500m-5000m, default: 1500m)
 
 ### Advanced features
 - **GETOUT waypoint**: Vehicle patrols exit before reaching destination
@@ -312,6 +320,11 @@ Automatic patrol system with strict separation between military and civilian pat
   - Unarmed vehicles: All units exit
 - **Dynamic update**: Waypoints recreated every 1 minute in combat to track players
 - **Player zone exclusion**: No spawns within 1000m radius around players
+- **Sensitive zone exclusion**: No spawns within 1500m radius around resource zones, FOBs, checkpoints
+- **Configurable base exclusion**: No spawns within configurable radius around `btc_base` marker (500m-5000m, default: 1500m)
+- **Custom exclusion zones**: Ability to add exclusion zones in `define_mod.sqf` via `btc_patrol_exclusion_zones`
+- **City tracking**: Tracking system to prevent patrols from always heading to the same cities (exclusion of cities selected in the last 5 minutes)
+- **City recapture**: Patrols can recapture liberated cities (40% chance) and create checkpoint missions (40% chance)
 - **Smart prioritization**: Patrols target players first, then liberated cities
 
 ### Interdependencies
@@ -353,6 +366,7 @@ Automatic patrol system with strict separation between military and civilian pat
 
 ---
 
-**Document created**: December 8, 2025  
-**Mission version**: 0.1.7
+**Document created**: December 10, 2025  
+**Last update**: December 15, 2025  
+**Mission version**: 0.2.1
 
