@@ -1,8 +1,8 @@
 # Résumé des Systèmes Personnalisés - Hearts and Minds Ultimate
 
-**Version**: 0.1.7  
+**Version**: 0.2.1  
 **Auteur**: [13RDPA] LEON  
-**Date**: Décembre 2025
+**Date**: 15 Décembre 2025
 
 ---
 
@@ -256,6 +256,9 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
 - `create_patrol.sqf` (militaires) : Création depuis villes ennemies occupées uniquement
 - `create_patrol.sqf` (civiles) : Création lors de l'activation des villes
 - Exclusion des zones joueurs : Aucune patrouille ne spawn dans un rayon de 1000m autour des joueurs
+- Exclusion des zones sensibles : Aucun spawn dans un rayon de 1500m autour des zones de ressources, FOB, checkpoints
+- Exclusion base configurable : Aucun spawn dans un rayon configurable autour du marqueur `btc_base` (500m-5000m, défaut: 1500m)
+- Zones d'exclusion personnalisées : Possibilité d'ajouter des zones d'exclusion dans `define_mod.sqf` via `btc_patrol_exclusion_zones`
 
 #### Gestion des Waypoints
 - `addWP.sqf` : Création de waypoints avec paramètres selon type (militaires/civiles)
@@ -268,6 +271,7 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
   - Priorité 1 : Positions des joueurs (attaque directe)
   - Priorité 2 : Villes libérées (recapture)
   - Priorité 3 : Villes occupées normales
+  - Tracking des villes récentes : Exclusion des villes sélectionnées dans les 5 dernières minutes pour éviter répétitions
 
 #### Détection et Filtrage
 - `hasPlayersNearby.sqf` : Vérifie présence de joueurs dans un rayon configurable
@@ -298,6 +302,9 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
 - `btc_p_patrol_timer` : Intervalle de création automatique (secondes)
 - `btc_p_patrol_max` : Nombre maximum de patrouilles militaires
 - `btc_p_patrol_vehicle_percent` : Pourcentage de patrouilles avec véhicules (0-100%)
+- `btc_p_patrol_exclusion_base_distance` : Distance d'exclusion autour de la base (500m-5000m, défaut: 1500m)
+- `btc_patrol_exclusion_zones` : Zones d'exclusion personnalisées (définies dans `define_mod.sqf`)
+- `btc_patrol_recent_cities` : Liste des villes récemment sélectionnées (tracking pour éviter répétitions)
 - `btc_auto_patrol` : Variable marquant les patrouilles automatiques (pour comportement agressif)
 
 ### Paramètres configurables (param.hpp)
@@ -305,6 +312,7 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
 - `btc_p_patrol_max` : Nombre maximum de patrouilles militaires (0-30)
 - `btc_p_civ_max_veh` : Nombre maximum de patrouilles civiles (0-30)
 - `btc_p_patrol_vehicle_percent` : Pourcentage de patrouilles avec véhicules (0-100%)
+- `btc_p_patrol_exclusion_base_distance` : Distance d'exclusion autour de la base (500m-5000m, défaut: 1500m)
 
 ### Fonctionnalités avancées
 - **Waypoint GETOUT** : Les patrouilles en véhicules sortent avant d'arriver à destination
@@ -312,6 +320,11 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
   - Véhicules non armés : Toutes les unités sortent
 - **Mise à jour dynamique** : Waypoints recréés toutes les 1 minute en combat pour suivre les joueurs
 - **Exclusion zones joueurs** : Aucun spawn dans un rayon de 1000m autour des joueurs
+- **Exclusion zones sensibles** : Aucun spawn dans un rayon de 1500m autour des zones de ressources, FOB, checkpoints
+- **Exclusion base configurable** : Aucun spawn dans un rayon configurable autour du marqueur `btc_base` (500m-5000m, défaut: 1500m)
+- **Zones d'exclusion personnalisées** : Possibilité d'ajouter des zones d'exclusion dans `define_mod.sqf` via `btc_patrol_exclusion_zones`
+- **Tracking des villes** : Système de tracking pour éviter que les patrouilles se dirigent toujours vers les mêmes villes (exclusion des villes sélectionnées dans les 5 dernières minutes)
+- **Recapture des villes** : Les patrouilles peuvent recapturer les villes libérées (40% de chance) et créer des missions checkpoint (40% de chance)
 - **Priorisation intelligente** : Les patrouilles ciblent d'abord les joueurs, puis les villes libérées
 
 ### Interdépendances
@@ -353,6 +366,7 @@ Système de patrouilles automatiques avec séparation stricte entre patrouilles 
 
 ---
 
-**Document créé le**: 8 Décembre 2025  
-**Version mission**: 0.1.7
+**Document créé le**: 10 Décembre 2025  
+**Dernière mise à jour**: 15 Décembre 2025  
+**Version mission**: 0.2.1
 
