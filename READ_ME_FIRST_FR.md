@@ -1,10 +1,10 @@
 # Hearts and Minds ULTIMATE - Guide du Joueur
 
-![Version](https://img.shields.io/badge/Version-0.1.7-blue)
+![Version](https://img.shields.io/badge/Version-0.2.1-blue)
 ![Statut](https://img.shields.io/badge/Statut-Production-green)
 
 **Auteur**: [13RDPA] LEON  
-**Basé sur**: Hearts & Minds 2.1.4 par Vdauphin (BTC_clan)
+**Basé sur**: Hearts & Minds 1.25.1 par Vdauphin (BTC_clan)
 
 ---
 
@@ -172,7 +172,7 @@ Le système de patrouilles a été considérablement amélioré avec deux types 
 - **Patrouilles militaires automatiques** : Créées automatiquement via un timer configurable depuis les villes ennemies occupées. Elles sont très agressives (mode combat, vigilance, vitesse maximale) et ciblent d'abord les positions des joueurs, puis tentent de recapturer les villes libérées. Elles peuvent être à pied ou en véhicule selon un pourcentage configurable.
 - **Patrouilles civiles** : Créées lors de l'activation des villes, elles circulent uniquement entre les villes libérées par les joueurs pour simuler le trafic civil normal. Elles sont non agressives et ne réagissent pas au combat.
 
-Les patrouilles militaires évitent de spawner dans un rayon de 1000m autour des joueurs pour éviter les confrontations immédiates. Si une patrouille entre en combat avec vous, ses waypoints se mettent à jour automatiquement toutes les 1 minute pour suivre vos mouvements. Les patrouilles en véhicules font sortir leurs unités avant d'arriver à destination (passagers seulement si le véhicule est armé). Le nombre maximum de patrouilles et le pourcentage de véhicules sont configurables dans les paramètres de la mission.
+Les patrouilles militaires évitent de spawner dans un rayon de 1000m autour des joueurs pour éviter les confrontations immédiates. Elles évitent également de spawner dans un rayon de 1500m autour des zones de ressources, FOB, checkpoints, et dans un rayon configurable autour de la base (500m-5000m, défaut: 1500m). Si une patrouille entre en combat avec vous, ses waypoints se mettent à jour automatiquement toutes les 1 minute pour suivre vos mouvements. Les patrouilles en véhicules font sortir leurs unités avant d'arriver à destination (passagers seulement si le véhicule est armé). Les patrouilles peuvent recapturer les villes libérées (40% de chance) et créer des missions checkpoint (40% de chance). Le nombre maximum de patrouilles et le pourcentage de véhicules sont configurables dans les paramètres de la mission.
 
 #### Réputation
 La réputation mesure votre relation avec la population civile. Une haute réputation facilite la collecte d'informations et réduit l'hostilité. Une basse réputation (causée par des pertes civiles ou des dégâts collatéraux) augmente la résistance ennemie et rend les civils hostiles. Gérez votre réputation en minimisant les pertes civiles et en libérant des villes.
@@ -264,7 +264,7 @@ Pour signaler des bugs ou proposer des améliorations, contactez **[13RDPA] LEON
 
 ## Crédits
 
-**Hearts & Minds 2.1.4** - Vdauphin (BTC_clan) & communauté (APL-SA)  
+**Hearts & Minds 1.25.1** - Vdauphin (BTC_clan) & communauté (APL-SA)  
 **Systèmes ULTIMATE** - [13RDPA] LEON  
 **Assistance développement** - IA Claude (Anthropic)
 
@@ -272,7 +272,7 @@ Pour signaler des bugs ou proposer des améliorations, contactez **[13RDPA] LEON
 
 **Bonne chance, soldats. La population compte sur vous.**
 
-*Dernière mise à jour: Décembre 2025 - Version 0.1.7*
+*Dernière mise à jour: 15 Décembre 2025 - Version 0.2.1*
 
 **Documentation complète**: Consultez les fichiers dans `READ_ME/FR/` pour plus d'informations sur la configuration et l'architecture des systèmes.
 
