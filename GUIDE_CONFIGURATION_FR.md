@@ -1,9 +1,9 @@
 # Guide de Configuration - Hearts and Minds ULTIMATE
 
-![Version](https://img.shields.io/badge/Version-0.1.7-blue)
+![Version](https://img.shields.io/badge/Version-0.2.1-blue)
 
 **Auteur**: [13RDPA] LEON  
-**Date**: Décembre 2025
+**Date**: 10 Décembre 2025
 
 ---
 
@@ -52,7 +52,7 @@ Mission/
 // Informations de la mission
 author = "[13RDPA] LEON";
 onLoadName = "Hearts And Minds ULTIMATE";
-onLoadMission = "Alpha Version 0.1.7";
+onLoadMission = "Stable Version 0.2.1";
 
 // Image de chargement
 loadScreen = "core\img\13rdpa.jpg";
@@ -84,8 +84,8 @@ respawnDialog = 0;              // 0 = pas de dialog
 ```sqf
 btc_version = [
     0,      // Version majeure
-    1,      // Version mineure
-    7       // Version patch
+    2,      // Version mineure
+    1       // Version patch
 ];
 ```
 
@@ -126,7 +126,10 @@ btc_patrol_area = 1500;             // Rayon de patrouille (mètres) - Zone de d
 btc_p_patrol_timer = 60;            // Intervalle création automatique (secondes, 0 = désactivé)
 btc_p_patrol_max = 10;              // Nombre maximum de patrouilles militaires
 btc_p_patrol_vehicle_percent = 50;  // Pourcentage de patrouilles avec véhicules (0-100)
+btc_p_patrol_exclusion_base_distance = 1500;  // Distance d'exclusion autour de la base (mètres, configurable via param.hpp)
 ```
+
+**Note sur les zones d'exclusion** : Les patrouilles ne spawnent pas dans un rayon configurable autour de la base (marqueur `btc_base`). Cette distance est configurable via le paramètre `btc_p_patrol_exclusion_base_distance` (500m à 5000m, défaut: 1500m). Vous pouvez également ajouter des zones d'exclusion personnalisées dans `define_mod.sqf` (voir section 6.C).
 
 #### E. Faction Ennemie
 
@@ -186,6 +189,10 @@ class btc_p_patrol_max { /* Nombre maximum de patrouilles militaires (0-30) */ }
 class btc_p_civ_max_veh { /* Nombre maximum de patrouilles civiles (0-30) */ };
 class btc_p_patrol_timer { /* Timer de création automatique (secondes, 0 = désactivé) */ };
 class btc_p_patrol_vehicle_percent { /* Pourcentage de patrouilles avec véhicules (0-100%) */ };
+class btc_p_patrol_exclusion_base_distance { /* Distance d'exclusion patrouilles autour de la base (500m-5000m, défaut: 1500m) */ };
+
+// Triggers et activation
+class btc_p_trigger { /* Désactiver activation villes si avion ou hélicoptère (>80 km/h) au-dessus (0=désactivé, 1=activé, défaut: 1) */ };
 
 // IED
 class btc_p_ied { /* Densité IED */ };
@@ -206,6 +213,24 @@ class btc_p_arsenal_Restrict { /* Restrictions arsenal */ };
 - Personnalisation de l'expérience de jeu
 
 **Note:** Ces paramètres sont dans l'interface graphique du serveur, mais vous pouvez aussi les modifier directement dans le fichier pour changer les valeurs par défaut.
+
+#### D. Configuration des Triggers
+
+**Limitations de hauteur des triggers** : Tous les triggers ont maintenant une hauteur maximale pour éviter les déclenchements depuis les airs :
+
+- **Zones de ressources, checkpoints et FOBs** : Limités à **50 mètres** de hauteur
+- **Villes** : Limitées à **100 mètres** de hauteur
+
+Ces limitations empêchent les déclenchements accidentels depuis des avions ou hélicoptères en vol.
+
+**Paramètre `btc_p_trigger`** : Ce paramètre contrôle si les villes s'activent lorsqu'un avion ou un hélicoptère survole la zone :
+
+- **Activé (1, défaut)** : Les villes ne s'activeront pas si :
+  - Un avion est présent dans le trigger
+  - Un hélicoptère volant à plus de **80 km/h** est présent dans le trigger
+- **Désactivé (0)** : Les villes s'activeront normalement, même avec des aéronefs au-dessus
+
+**Note technique** : La vitesse limite des hélicoptères a été réduite de 190 km/h à 80 km/h dans la version 0.1.9 pour une meilleure protection contre les survols rapides.
 
 ---
 
@@ -354,7 +379,22 @@ private _items = [
 btc_custom_arsenal = [_weapons, _magazines, _items, _backpacks];
 ```
 
-#### C. Loadouts Automatiques
+#### C. Zones d'Exclusion pour les Patrouilles
+
+```sqf
+btc_patrol_exclusion_zones = [
+    // Format: [POSITION, DISTANCE]
+    // POSITION: [x, y, z] - Position sur la carte
+    // DISTANCE: Rayon d'exclusion en mètres
+    [[13132.8, 3315.07, 0], 2000],  // Zone d'exclusion de 2000m
+    [[15000, 12000, 0], 3000],      // Zone d'exclusion de 3000m
+    [[8500, 9500, 0], 1500]         // Zone d'exclusion de 1500m
+];
+```
+
+**Note**: Ces zones s'ajoutent à la zone de la base principale (marqueur `btc_base`). La distance d'exclusion de la base est configurable via le paramètre `btc_p_patrol_exclusion_base_distance` dans les paramètres de mission (500m à 5000m, défaut: 1500m).
+
+#### D. Loadouts Automatiques
 
 ```sqf
 // Loadouts par environnement: Desert, Tropic, Black, Forest
@@ -370,6 +410,7 @@ private _uniforms = [
 - Ajouter des villes sur la carte
 - Personnaliser l'arsenal disponible
 - Changer les loadouts de départ
+- Ajouter des zones d'exclusion pour les patrouilles
 
 ---
 
@@ -575,7 +616,7 @@ Sauf si vous savez ce que vous faites:
 
 **Bon modding!**
 
-*Dernière mise à jour: Décembre 2025 - Version 0.1.7*
+*Dernière mise à jour: 15 Décembre 2025 - Version 0.2.1*
 
 **Note**: Pour plus de détails sur les systèmes personnalisés, consultez `RESUME_SYSTEMES_PERSONNALISES.md` et `ARCHITECTURE_COMPLETE.md`.
 
