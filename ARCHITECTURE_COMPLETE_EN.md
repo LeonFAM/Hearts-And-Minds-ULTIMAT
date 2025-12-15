@@ -1,9 +1,9 @@
-# Complete Architecture - Hearts and Minds Ultimate v0.1.7
+# Complete Architecture - Hearts and Minds Ultimate v0.2.1
 
 **Mission**: Hearts and Minds Ultimate  
-**Version**: 0.1.7  
+**Version**: 0.2.1  
 **Author**: [13RDPA] LEON  
-**Date**: December 2025
+**Date**: December 15, 2025
 
 ---
 
@@ -660,6 +660,9 @@ Hearts and Minds Ultimate is a persistent automated Arma 3 mission based on Hear
 - `btc_p_patrol_timer`: Automatic creation interval (seconds, 0 = disabled)
 - `btc_p_patrol_max`: Maximum number of military patrols
 - `btc_p_patrol_vehicle_percent`: Percentage of patrols with vehicles (0-100%)
+- `btc_p_patrol_exclusion_base_distance`: Base exclusion distance (500m-5000m, default: 1500m)
+- `btc_patrol_exclusion_zones`: Custom exclusion zones (defined in `define_mod.sqf`)
+- `btc_patrol_recent_cities`: List of recently selected cities (tracking to avoid repetitions)
 - `btc_auto_patrol`: Variable marking automatic patrols (aggressive behavior)
 
 **Advanced features**:
@@ -668,7 +671,12 @@ Hearts and Minds Ultimate is a persistent automated Arma 3 mission based on Hear
   - Unarmed vehicles: All units exit
 - **Dynamic update**: Waypoints recreated every 1 minute in combat to track players
 - **Player zone exclusion**: No spawns within 1000m radius around players
+- **Sensitive zone exclusion**: No spawns within 1500m radius around resource zones, FOBs, checkpoints
+- **Configurable base exclusion**: No spawns within configurable radius around `btc_base` marker (500m-5000m, default: 1500m)
+- **Custom exclusion zones**: Ability to add exclusion zones in `define_mod.sqf` via `btc_patrol_exclusion_zones`
 - **Smart prioritization**: Patrols target player positions first, then liberated cities
+- **City tracking**: Tracking system to prevent patrols from always heading to the same cities (exclusion of cities selected in the last 5 minutes)
+- **City recapture**: Patrols can recapture liberated cities (40% chance) and create checkpoint missions (40% chance)
 
 **Interdependencies**:
 - Uses `btc_mil_fnc_create_patrol` to create military patrols
@@ -1366,7 +1374,7 @@ Hearts and Minds Ultimate is a persistent automated Arma 3 mission based on Hear
 ## 📊 MAIN GLOBAL VARIABLES
 
 ### Base system
-- `btc_version`: Mission version [0, 1, 6]
+- `btc_version`: Mission version [0, 2, 1]
 - `btc_player_side`: Player side
 - `btc_enemy_side`: Enemy side
 - `btc_city_all`: HashMap of all cities
@@ -1480,7 +1488,7 @@ Hearts and Minds Ultimate is a persistent automated Arma 3 mission based on Hear
 
 ---
 
-**Document created**: December 8, 2025  
-**Last update**: December 8, 2025  
-**Mission version**: 0.1.7
+**Document created**: December 10, 2025  
+**Last update**: December 15, 2025  
+**Mission version**: 0.2.1
 
