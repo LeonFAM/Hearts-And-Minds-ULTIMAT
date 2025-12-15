@@ -1,10 +1,10 @@
 # Hearts and Minds ULTIMATE - Player Guide
 
-![Version](https://img.shields.io/badge/Version-0.1.7-blue)
+![Version](https://img.shields.io/badge/Version-0.2.1-blue)
 ![Status](https://img.shields.io/badge/Status-Production-green)
 
 **Author**: [13RDPA] LEON  
-**Based on**: Hearts & Minds 2.1.4 by Vdauphin (BTC_clan)
+**Based on**: Hearts & Minds 1.25.1 by Vdauphin (BTC_clan)
 
 ---
 
@@ -172,7 +172,7 @@ The patrol system has been significantly enhanced with two distinct types:
 - **Automatic military patrols**: Created automatically via a configurable timer from enemy-occupied cities. They are very aggressive (combat mode, awareness, maximum speed) and target player positions first, then attempt to recapture liberated cities. They can be on foot or in vehicles according to a configurable percentage.
 - **Civilian patrols**: Created during city activation, they travel only between cities liberated by players to simulate normal civilian traffic. They are non-aggressive and do not react to combat.
 
-Military patrols avoid spawning within a 1000m radius around players to avoid immediate confrontations. If a patrol enters combat with you, its waypoints update automatically every 1 minute to follow your movements. Vehicle patrols make their units exit before reaching destination (passengers only if the vehicle is armed). The maximum number of patrols and vehicle percentage are configurable in mission parameters.
+Military patrols avoid spawning within a 1000m radius around players to avoid immediate confrontations. They also avoid spawning within a 1500m radius around resource zones, FOBs, checkpoints, and within a configurable radius around the base (500m-5000m, default: 1500m). If a patrol enters combat with you, its waypoints update automatically every 1 minute to follow your movements. Vehicle patrols make their units exit before reaching destination (passengers only if the vehicle is armed). Patrols can recapture liberated cities (40% chance) and create checkpoint missions (40% chance). The maximum number of patrols and vehicle percentage are configurable in mission parameters.
 
 #### Reputation
 Reputation measures your relationship with the civilian population. High reputation facilitates information collection and reduces hostility. Low reputation (caused by civilian casualties or collateral damage) increases enemy resistance and makes civilians hostile. Manage your reputation by minimizing civilian casualties and liberating cities.
@@ -264,7 +264,7 @@ To report bugs or suggest improvements, contact **[13RDPA] LEON** via Discord.
 
 ## Credits
 
-**Hearts & Minds 2.1.4** - Vdauphin (BTC_clan) & community (APL-SA)  
+**Hearts & Minds 1.25.1** - Vdauphin (BTC_clan) & community (APL-SA)  
 **ULTIMATE Systems** - [13RDPA] LEON  
 **Development assistance** - AI Claude (Anthropic)
 
@@ -272,7 +272,7 @@ To report bugs or suggest improvements, contact **[13RDPA] LEON** via Discord.
 
 **Good luck, soldiers. The population is counting on you.**
 
-*Last update: December 2025 - Version 0.1.7*
+*Last update: December 15, 2025 - Version 0.2.1*
 
 **Complete documentation**: See files in `READ_ME/EN/` for more information on system configuration and architecture.
 
