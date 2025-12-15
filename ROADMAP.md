@@ -348,7 +348,7 @@
 
 ## 📈 Métriques de succès
 
-### Version 0.1.0 (actuelle)
+### Version 0.2.1 (actuelle)
 - ✅ Stabilité multijoueur : 100%
 - ✅ Bugs critiques : 0
 - ✅ Documentation : Complète
@@ -373,7 +373,7 @@
 ## 🤝 Comment contribuer
 
 ### Signaler un bug
-1. Vérifiez la version actuelle (0.1.0)
+1. Vérifiez la version actuelle (0.2.1)
 2. Reproduisez le bug
 3. Fournissez logs et RPT
 4. Contactez [13RDPA] LEON
@@ -413,6 +413,7 @@
 
 **Dernière mise à jour** : Décembre 2025  
 **Version du document** : 2.0
+
 
 
 
