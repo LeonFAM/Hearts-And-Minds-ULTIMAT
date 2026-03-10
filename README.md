@@ -2,7 +2,7 @@
 
 🇫🇷 FR Version 
 
-Hearts & Minds ULTIMATE est une version stable (v0.3.1) améliorée et hybride de la mission Hearts & Minds sur ARMA 3, développée par [13RDPA] LEON. Elle fusionne les concepts de KP Liberation, Antistasi et Hearts & Minds, pour proposer un gameplay tactique et stratégique plus complet.
+Hearts & Minds ULTIMATE est une version stable (v0.4.0) améliorée et hybride de la mission Hearts & Minds sur ARMA 3, développée par [13RDPA] LEON. Elle fusionne les concepts de KP Liberation, Antistasi et Hearts & Minds, pour proposer un gameplay tactique et stratégique plus complet.
 
 Systèmes principaux :
 
@@ -32,7 +32,7 @@ En bref : une mission immersive et avancée, qui combine le meilleur des trois m
 
 🇬🇧 ENG Version 
 
-Hearts & Minds ULTIMATE is a stable version (v0.3.1) improved and hybrid mission of Hearts & Minds on ARMA 3, developed by [13RDPA] LEON. It merges concepts from KP Liberation, Antistasi and Hearts & Minds, to offer more complete tactical and strategic gameplay.
+Hearts & Minds ULTIMATE is a stable version (v0.4.0) improved and hybrid mission of Hearts & Minds on ARMA 3, developed by [13RDPA] LEON. It merges concepts from KP Liberation, Antistasi and Hearts & Minds, to offer more complete tactical and strategic gameplay.
 
 Main systems:
 
