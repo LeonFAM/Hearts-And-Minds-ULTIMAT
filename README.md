@@ -89,11 +89,11 @@ Cette version corrige et améliore en profondeur la mission originale :
 👉 GitHub :  
 [https://github.com/13RDPALEON/Hearts-And-Minds-ULTIMAT/releases](https://github.com/13RDPALEON/Hearts-And-Minds-ULTIMAT/releases)
 👉Guide FR
-[https://drive.google.com/drive/folders/1HaewxHUJuoa5pdDoliOBOGdrhMUJpSAO?usp=sharing](url=https://drive.google.com/drive/folders/1HaewxHUJuoa5pdDoliOBOGdrhMUJpSAO?usp=sharing)
+[Guide FR](https://drive.google.com/drive/folders/1HaewxHUJuoa5pdDoliOBOGdrhMUJpSAO?usp=sharing)
 
 ---
 
-## 🇬🇧 ENG - Steam Description (Corrected)
+## 🇬🇧 ENG 
 
 ## ⚙️ Fully Reworked Mission
 
@@ -176,4 +176,4 @@ Cette version corrige et améliore en profondeur la mission originale :
 👉 GitHub:  
 [https://github.com/13RDPALEON/Hearts-And-Minds-ULTIMAT/releases](https://github.com/13RDPALEON/Hearts-And-Minds-ULTIMAT/releases)
 👉 ENG GUIDE
-[https://drive.google.com/drive/folders/1fEcC-FVdRdwC1Uq9zG5lulIjANlbRD8Q?usp=sharing](https://drive.google.com/drive/folders/1fEcC-FVdRdwC1Uq9zG5lulIjANlbRD8Q?usp=sharing)
+[ENG Guide](https://drive.google.com/drive/folders/1fEcC-FVdRdwC1Uq9zG5lulIjANlbRD8Q?usp=sharing)
